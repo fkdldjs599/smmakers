@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - SHIN HYERIM</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+
+<header class="header">
+    <div class="b_head">
+        <button type="button" class="ham vt_mid" onclick="location.href='index.html'">
+            <img src="img/ham.png" alt="메뉴">
+        </button>
+        <h1 class="h1 vt_mid">
+            <a href="index.html">
+                <img src="img/logo.png" alt="CARDIO LINK">
+            </a>
+        </h1>
+    </div>   
+</header>
+
+<div class="con_inner">
+
+    <div class="side_bar">
+        <div class="my_area">
+            <h2 class="my_h2">에스엠메이커스</h2>
+            <div class="my_div">smmakers@smmakers.com</div>
+            <button type="button" class="logout" onclick="location.href='login.html'">로그아웃</button>
+        </div>
+        <nav class="nav">
+            <a href="index.html" class="nav_a">
+                <img src="img/nav_1.png" alt="홈">
+                <span class="nav_sp">홈</span>
+            </a>
+            <a href="history.html" class="nav_a">
+                <img src="img/nav_2.png" alt="이력 관리">
+                <span class="nav_sp">이력 관리</span>
+            </a>
+
+            <a href="member.html" class="nav_a on">
+                <img src="img/nav_3_on.png" alt="회원 관리">
+                <span class="nav_sp">회원 관리</span>
+            </a>
+            <a href="class.html" class="nav_a">
+                <img src="img/nav_4.png" alt="클래스 관리">
+                <span class="nav_sp">클래스 관리</span>
+            </a>
+            <a href="cardio_link.html" class="nav_a">
+                <img src="img/nav_5.png" alt="카디오링크 관리">
+                <span class="nav_sp">카디오링크 관리</span>
+            </a>
+
+            <a href="set.html" class="nav_a set_a">
+                <img src="img/nav_6.png" alt="설정">
+                <span class="nav_sp">설정</span>
+            </a>
+        </nav>
+    </div>
+
+    <section id="member" class="section">
+
+        <div class="contents">
+    
+            <div class="white_bg">
+    
+                <div class="title_area">
+    
+                    <h3 class="c_h3">회원 관리</h3>
+    
+                    <div class="sub">회원을 선택하시면 운동 내역을 확인하실 수 있습니다</div>
+    
+                </div>
+    
+                <div class="m_con">
+    
+                    <div class="m_left vt_top">
+    
+                        <div class="s_area">
+    
+                            <div class="s_wrap vt_mid">
+    
+                                <input type="text" name="search" id="search" class="input" placeholder="이름 / 이메일 검색">
+    
+                                <button type="button" class="s_btn">
+    
+                                    <img src="img/s_btn.png" alt="검색">
+    
+                                </button>
+    
+                            </div>
+    
+                            <button type="button" class="add_btn vt_mid">
+    
+                                <img src="img/add_btn.png" alt="회원 추가" class="false on">
+    
+                                <img src="img/add_btn_on.png" alt="회원 추가" class="true">
+    
+                            </button>
+    
+                        </div>
+    
+                        <div class="m_list">
+    
+                            <div class="wid525">
+    
+                                <div class="th_wrap">
+    
+                                    <div class="th vt_mid">이름</div>
+    
+                                    <div class="th vt_mid">성별</div>
+    
+                                    <div class="th vt_mid">나이</div>
+    
+                                    <div class="th vt_mid">신장</div>
+    
+                                    <div class="th vt_mid">체중</div>
+    
+                                </div>
+    
+                                <div class="m_ul">
+    
+                                    <button class="m_li">
+    
+                                        <div class="td vt_mid">김철수</div>
+    
+                                        <div class="td vt_mid">남</div>
+    
+                                        <div class="td vt_mid">30세</div>
+    
+                                        <div class="td vt_mid">171cm</div>
+    
+                                        <div class="td vt_mid">70kg</div>
+    
+                                    </button>
+    
+                                    <button class="m_li">
+    
+                                        <div class="td vt_mid">김수남</div>
+    
+                                        <div class="td vt_mid">남</div>
+    
+                                        <div class="td vt_mid">33세</div>
+    
+                                        <div class="td vt_mid">177cm</div>
+    
+                                        <div class="td vt_mid">90kg</div>
+    
+                                    </button>
+    
+                                    <button class="m_li">
+    
+                                        <div class="td vt_mid">최예나</div>
+    
+                                        <div class="td vt_mid">여</div>
+    
+                                        <div class="td vt_mid">29세</div>
+    
+                                        <div class="td vt_mid">160cm</div>
+    
+                                        <div class="td vt_mid">60kg</div>
+    
+                                    </button>
+    
+                                    <button class="m_li">
+    
+                                        <div class="td vt_mid">이영수</div>
+    
+                                        <div class="td vt_mid">남</div>
+    
+                                        <div class="td vt_mid">25세</div>
+    
+                                        <div class="td vt_mid">180cm</div>
+    
+                                        <div class="td vt_mid">73kg</div>
+    
+                                    </button>
+    
+                                    <button class="m_li">
+    
+                                        <div class="td vt_mid">이영희</div>
+    
+                                        <div class="td vt_mid">여</div>
+    
+                                        <div class="td vt_mid">25세</div>
+    
+                                        <div class="td vt_mid">165cm</div>
+    
+                                        <div class="td vt_mid">63kg</div>
+    
+                                    </button>
+    
+                                    <button class="m_li">
+    
+                                        <div class="td vt_mid">김철수</div>
+    
+                                        <div class="td vt_mid">남</div>
+    
+                                        <div class="td vt_mid">30세</div>
+    
+                                        <div class="td vt_mid">171cm</div>
+    
+                                        <div class="td vt_mid">70kg</div>
+    
+                                    </button>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+    
+                        <div class="down_area">
+    
+                            <h4 class="d_h4">회원 엑셀 일괄등록</h4>
+    
+                            <table class="table">
+    
+                                <tr>
+    
+                                    <td class="da_left">
+    
+                                        <img src="img/icon_excel.png" alt="엑셀 아이콘" class="vt_mid">
+    
+                                        <span class="da_txt vt_mid">엑셀 등록 양식 다운로드</span>
+    
+                                    </td>
+    
+                                    <td class="da_right">
+    
+                                        <button type="button" class="down_btn vt_mid">다운로드</button>
+    
+                                        <span class="info vt_mid">다운로드 되지 않는 경우</span>
+    
+                                        <a href="#" class="blue vt_mid">▶ 환경설정</a>
+    
+                                    </td>
+    
+                                </tr>
+    
+                                <tr>
+    
+                                    <td class="da_left">
+    
+                                        <img src="img/icon_excel.png" alt="엑셀 아이콘" class="vt_mid">
+    
+                                        <span class="da_txt vt_mid">회원 엑셀 등록하기</span>
+    
+                                    </td>
+    
+                                    <td class="da_right">
+    
+                                        <input type="file" class="file">
+    
+                                        <button type="button" class="down_btn">등록하기</button>
+    
+                                    </td>
+    
+                                </tr>
+    
+                            </table>
+    
+                        </div>
+    
+                    </div>
+    
+                    <div class="m_right vt_top">
+    
+                        <div class="border">
+    
+                        <!--
+    
+                            tab1 = 선택하기 전
+    
+                            tab2 = 회원 운동정보
+    
+                            tab3 = 회원 운동정보 > 상세
+    
+                            tab4 = 새 회원 추가
+    
+                            tab5 = 회원 정보 수정
+    
+                        -->
+    
+                            <div class="tab tab1 on">회원을 선택해주세요</div>
+    
+                            <div class="tab tab2">
+    
+                                <h4 class="t2_tit">
+    
+                                    <div class="t2_left vt_mid">
+    
+                                        <span class="fs36">김철수</span>님의 운동정보
+    
+                                    </div>
+    
+                                    <div class="t2_right vt_mid">
+    
+                                        <button type="button" class="btns btn1">다운로드</button>
+    
+                                        <button type="button" class="btns btn2">수정</button>
+    
+                                        <button type="button" class="btns btn3">삭제</button>
+    
+                                    </div>
+    
+                                </h4>
+    
+                                <h5 class="m_h5">개인정보</h5>
+    
+                                <div class="gray_border">
+    
+                                    <div class="gb_wrap">
+    
+                                        <div class="gb_box vt_top">
+    
+                                            <div class="gb_block">
+    
+                                                <div class="left vt_mid">이름</div>
+    
+                                                <div class="right vt_mid">김철수</div>
+    
+                                            </div>
+    
+                                            <div class="gb_block">
+    
+                                                <div class="left vt_mid">키</div>
+    
+                                                <div class="right vt_mid">171cm</div>
+    
+                                            </div>
+    
+                                            <div class="gb_block">
+    
+                                                <div class="left vt_mid">생년월일</div>
+    
+                                                <div class="right vt_mid">1994-10-19</div>
+    
+                                            </div>
+    
+                                        </div><!--gb_box-->
+    
+                                        <div class="gb_box vt_top">
+    
+                                            <div class="gb_block">
+    
+                                                <div class="left vt_mid">성별</div>
+    
+                                                <div class="right vt_mid">남</div>
+    
+                                            </div>
+    
+                                            <div class="gb_block">
+    
+                                                <div class="left vt_mid">몸무게</div>
+    
+                                                <div class="right vt_mid">70kg</div>
+    
+                                            </div>
+    
+                                        </div><!--gb_box-->
+    
+                                    </div>
+    
+                                    <div class="gb_wrap">
+    
+                                        <div class="gb_box vt_top">
+    
+                                            <div class="gb_block">
+    
+                                                <div class="left vt_mid">휴대폰</div>
+    
+                                                <div class="right vt_mid">010-1234-5678</div>
+    
+                                            </div>
+    
+                                            <div class="gb_block">
+    
+                                                <div class="left vt_mid">이메일</div>
+    
+                                                <div class="right vt_mid">test@naver.com</div>
+    
+                                            </div>
+    
+                                        </div><!--gb_box-->
+    
+                                        <div class="gb_box vt_top">
+    
+                                            <div class="gb_block">
+    
+                                                <div class="left vt_mid">평균 심박수</div>
+    
+                                                <div class="right vt_mid">75 bpm</div>
+    
+                                            </div>
+    
+                                            <div class="gb_block">
+    
+                                                <div class="left vt_mid">최대 심박수</div>
+    
+                                                <div class="right vt_mid">188 bpm</div>
+    
+                                            </div>
+    
+                                        </div><!--gb_box-->
+    
+                                    </div>
+    
+                                </div>
+    
+    
+    
+                                <h5 class="m_h5">운동이력</h5>
+    
+                                <div class="e_wrap">
+    
+                                    <div class="first">
+    
+                                        <div class="th th1">일시</div>
+    
+                                        <div class="th th2">운동시간</div>
+    
+                                        <div class="th th3">클래스</div>
+    
+                                        <div class="th th4">소모 칼로리</div>
+    
+                                        <div class="th th5">평균 심박수</div>
+    
+                                        <div class="th th6">최대 심박수</div>
+    
+                                    </div>
+    
+                                    <div class="tr">
+    
+                                        <div class="td td1">2023-11-02  18:18</div>
+    
+                                        <div class="td td2">00:06:31</div>
+    
+                                        <div class="td td3">쫑</div>
+    
+                                        <div class="td td4">112kcal</div>
+    
+                                        <div class="td td5">156bpm</div>
+    
+                                        <div class="td td6">201bpm</div>
+    
+                                    </div>
+    
+                                    <div class="tr">
+    
+                                        <div class="td td1">2023-10-27  19:45</div>
+    
+                                        <div class="td td2">00:02:35</div>
+    
+                                        <div class="td td3">그라운드 부스터</div>
+    
+                                        <div class="td td4">31kcal</div>
+    
+                                        <div class="td td5">119bpm</div>
+    
+                                        <div class="td td6">139bpm</div>
+    
+                                    </div>
+    
+                                    <div class="tr">
+    
+                                        <div class="td td1">2023-10-19  17:03</div>
+    
+                                        <div class="td td2">00:00:20</div>
+    
+                                        <div class="td td3">그라운드 웨이트</div>
+    
+                                        <div class="td td4">9kcal</div>
+    
+                                        <div class="td td5">117bpm</div>
+    
+                                        <div class="td td6">124bpm</div>
+    
+                                    </div>
+    
+                                    <div class="tr">
+    
+                                        <div class="td td1">2023-09-20  20:51</div>
+    
+                                        <div class="td td2">01:02:18</div>
+    
+                                        <div class="td td3">그라운드 웨이트</div>
+    
+                                        <div class="td td4">558kcal</div>
+    
+                                        <div class="td td5">113bpm</div>
+    
+                                        <div class="td td6">171bpm</div>
+    
+                                    </div>
+    
+                                    <div class="tr">
+    
+                                        <div class="td td1">2023-08-28  10:33</div>
+    
+                                        <div class="td td2">00:19:28</div>
+    
+                                        <div class="td td3">그라운드 부스터</div>
+    
+                                        <div class="td td4">316kcal</div>
+    
+                                        <div class="td td5">160bpm</div>
+    
+                                        <div class="td td6">191bpm</div>
+    
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="tab tab3">
+    
+                                <h4 class="t3_tit">
+    
+                                    <div class="t3_left vt_bot">
+    
+                                        <span class="fs36">김철수</span>님의 운동정보
+    
+                                    </div>
+    
+                                    <div class="t3_cen vt_bot">
+    
+                                        일시: 2023-11-02  18:18
+    
+                                    </div>
+    
+                                    <div class="t3_right vt_bot">
+    
+                                        클래스: 쫑
+    
+                                    </div>
+    
+                                </h4>
+    
+                                <div class="gray_box">
+    
+                                    <div class="wid25 vt_mid">
+    
+                                        <div class="gb_icon vt_mid">
+    
+                                            <img src="img/h_icon1.png" alt="운동시간">
+    
+                                        </div>
+    
+                                        <div class="gb_txt vt_mid">
+    
+                                            <div class="gbt_top">운동시간</div>
+    
+                                            <div class="gbt_bot">00:06:31</div>
+    
+                                        </div>
+    
+                                    </div>
+    
+                                    <div class="wid25 vt_mid">
+    
+                                        <div class="gb_icon vt_mid">
+    
+                                            <img src="img/h_icon2.png" alt="소모 칼로리">
+    
+                                        </div>
+    
+                                        <div class="gb_txt vt_mid">
+    
+                                            <div class="gbt_top">소모 칼로리</div>
+    
+                                            <div class="gbt_bot">112kcal</div>
+    
+                                        </div>
+    
+                                    </div>
+    
+                                    <div class="wid25 vt_mid">
+    
+                                        <div class="gb_icon vt_mid">
+    
+                                            <img src="img/h_icon3.png" alt="평균 심박수">
+    
+                                        </div>
+    
+                                        <div class="gb_txt vt_mid">
+    
+                                            <div class="gbt_top">평균 심박수</div>
+    
+                                            <div class="gbt_bot">156bpm</div>
+    
+                                        </div>
+    
+                                    </div>
+    
+                                    <div class="wid25 vt_mid">
+    
+                                        <div class="gb_icon vt_mid">
+    
+                                            <img src="img/h_icon3.png" alt="운동시간">
+    
+                                        </div>
+    
+                                        <div class="gb_txt vt_mid">
+    
+                                            <div class="gbt_top">최대 심박수</div>
+    
+                                            <div class="gbt_bot">201bpm</div>
+    
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+    
+    
+    
+                                <div class="chart">
+    
+                                    <h5 class="c_tit">HR Data Statistics</h5>
+    
+                                    <div class="chart1">
+    
+                                        <!--도넛차트-->
+    
+                                        <div class="ct1_area vt_mid">
+    
+                                            <canvas id="doughnut"></canvas>
+    
+                                        </div>
+    
+    
+    
+                                        <!--막대차트-->
+    
+                                        <div class="ct2_area vt_mid">
+    
+                                            <div class="ct2_line">
+    
+                                                <div class="ct2_left vt_mid">50 ~ 60%</div>
+    
+                                                <div class="ct2_cen vt_mid">
+    
+                                                    <div class="gray_bar">
+    
+                                                        <div class="color_bar black"></div>
+    
+                                                    </div>
+    
+                                                </div>
+    
+                                                <div class="ct2_right vt_mid">6%</div>
+    
+                                            </div>
+    
+                                            <div class="ct2_line">
+    
+                                                <div class="ct2_left vt_mid">60 ~ 70%</div>
+    
+                                                <div class="ct2_cen vt_mid">
+    
+                                                    <div class="gray_bar">
+    
+                                                        <div class="color_bar blue"></div>
+    
+                                                    </div>
+    
+                                                </div>
+    
+                                                <div class="ct2_right vt_mid">16%</div>
+    
+                                            </div>
+    
+                                            <div class="ct2_line">
+    
+                                                <div class="ct2_left vt_mid">70 ~ 80%</div>
+    
+                                                <div class="ct2_cen vt_mid">
+    
+                                                    <div class="gray_bar">
+    
+                                                        <div class="color_bar green"></div>
+    
+                                                    </div>
+    
+                                                </div>
+    
+                                                <div class="ct2_right vt_mid">28%</div>
+    
+                                            </div>
+    
+                                            <div class="ct2_line">
+    
+                                                <div class="ct2_left vt_mid">80 ~ 90%</div>
+    
+                                                <div class="ct2_cen vt_mid">
+    
+                                                    <div class="gray_bar">
+    
+                                                        <div class="color_bar orange"></div>
+    
+                                                    </div>
+    
+                                                </div>
+    
+                                                <div class="ct2_right vt_mid">13%</div>
+    
+                                            </div>
+    
+                                            <div class="ct2_line">
+    
+                                                <div class="ct2_left vt_mid">90 ~ 100%</div>
+    
+                                                <div class="ct2_cen vt_mid">
+    
+                                                    <div class="gray_bar">
+    
+                                                        <div class="color_bar red"></div>
+    
+                                                    </div>
+    
+                                                </div>
+    
+                                                <div class="ct2_right vt_mid">37%</div>
+    
+                                            </div>
+    
+                                        </div>
+    
+                                    </div>
+    
+    
+    
+                                    <div class="c_tit2">
+    
+                                        <div class="ct2_1 vt_mid">회복률: 0%</div>
+    
+                                        <label for="time" class="ct2_2 vt_mid">직접입력: </label>
+    
+                                        <div class="ct2_3 vt_mid">
+    
+                                            <img src="img/icon_time.png" alt="직접입력">
+    
+                                            <input type="text" name="time" id="time" class="input" value="00:00:00">
+    
+                                        </div>
+    
+                                    </div>
+    
+    
+    
+                                    <!--선 차트-->
+    
+                                    <div class="chart2">
+    
+                                        <canvas id="line-chart"></canvas>
+    
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="tab tab4">
+    
+                                <h4 class="t4_tit">새 회원 추가</h4>
+    
+                                <div class="add_wrap">
+    
+                                    <form name="add_member">
+    
+                                        <div class="a_wrap">
+    
+                                            <div class="a_block">
+    
+                                                <label for="mem_name" class="a_lab">
+    
+                                                    <span class="vt_top red">*</span>
+    
+                                                    <span class="vt_top">이름</span>
+    
+                                                </label>
+    
+                                                <div class="a_input">
+    
+                                                    <input type="text" name="mem_name" id="mem_name" class="text">
+    
+                                                </div>
+    
+                                            </div>
+    
+                                            <div class="a_block">
+    
+                                                <label class="a_lab">
+    
+                                                    <span class="vt_top red">*</span>
+    
+                                                    <span class="vt_top">성별</span>
+    
+                                                </label>
+    
+                                                <div class="a_input">
+    
+                                                    <div class="mr50">
+    
+                                                        <input type="radio" name="gender" id="male" class="radio">
+    
+                                                        <label for="male" class="r_lab">남</label>
+    
+                                                    </div>
+    
+                                                    <div class="mr50">
+    
+                                                        <input type="radio" name="gender" id="female" class="radio">
+    
+                                                        <label for="female" class="r_lab">여</label>
+    
+                                                    </div>
+    
+                                                </div>
+    
+                                            </div>
+    
+                                            <div class="a_block">
+    
+                                                <label for="height" class="a_lab">
+    
+                                                    <span class="vt_top red">*</span>
+    
+                                                    <span class="vt_top">키</span>
+    
+                                                </label>
+    
+                                                <div class="a_input">
+    
+                                                    <input type="number" name="height" id="height" class="text2">
+    
+                                                    <span class="vt_mid">cm</span>
+    
+                                                </div>
+    
+                                            </div>
+    
+                                            <div class="a_block">
+    
+                                                <label for="weight" class="a_lab">
+    
+                                                    <span class="vt_top red">*</span>
+    
+                                                    <span class="vt_top">몸무게</span>
+    
+                                                </label>
+    
+                                                <div class="a_input">
+    
+                                                    <input type="number" name="weight" id="weight" class="text2">
+    
+                                                    <span class="vt_mid">kg</span>
+    
+                                                </div>
+    
+                                            </div>
+    
+                                            <div class="a_block">
+    
+                                                <label for="birth" class="a_lab">
+    
+                                                    <span class="vt_top red">*</span>
+    
+                                                    <span class="vt_top">생년월일</span>
+    
+                                                </label>
+    
+                                                <div class="a_input">
+    
+                                                    <input type="date" name="birth" id="birth" class="date nodate">
+    
+                                                </div>
+    
+                                            </div>
+    
+                                            <div class="a_block">
+    
+                                                <label for="rate" class="a_lab">
+    
+                                                    <span class="vt_top">안정 심박수</span>
+    
+                                                </label>
+    
+                                                <div class="a_input">
+    
+                                                    <input type="number" name="rate" id="rate" class="text2">
+    
+                                                    <span class="vt_mid">bpm</span>
+    
+                                                </div>
+    
+                                            </div>
+    
+                                            <div class="a_block">
+    
+                                                <label for="rate_max" class="a_lab">
+    
+                                                    <span class="vt_top">최대 심박수</span>
+    
+                                                </label>
+    
+                                                <div class="a_input">
+    
+                                                    <input type="number" name="rate_max" id="rate_max" class="text2">
+    
+                                                    <span class="vt_mid">bpm</span>
+    
+                                                </div>
+    
+                                            </div>
+    
+                                            <div class="a_block">
+    
+                                                <label for="mem_email" class="a_lab">
+    
+                                                    <span class="vt_top red">*</span>
+    
+                                                    <span class="vt_top">이메일</span>
+    
+                                                </label>
+    
+                                                <div class="a_input">
+    
+                                                    <input type="email" name="mem_email" id="mem_email" class="text">
+    
+                                                </div>
+    
+                                            </div>
+    
+                                            <div class="a_block">
+    
+                                                <label for="mem_phone" class="a_lab">
+    
+                                                    <span class="vt_top red">*</span>
+    
+                                                    <span class="vt_top">휴대폰</span>
+    
+                                                </label>
+    
+                                                <div class="a_input">
+    
+                                                    <input type="number" name="mem_phone" id="mem_phone" class="text">
+    
+                                                </div>
+    
+                                            </div>
+    
+                                        </div><!--a_wrap-->
+    
+                                        <div class="btn_wrap">
+    
+                                            <button type="button" class="btns btn1">저장</button>
+    
+                                            <button type="button" class="btns btn2">취소</button>
+    
+                                        </div>
+    
+                                    </form>
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="tab tab5">
+    
+                                <h4 class="t4_tit">회원 정보 수정</h4>
+    
+                                <div class="add_wrap">
+    
+                                    <form name="edit_member">
+    
+                                        <div class="a_wrap">
+    
+                                            <div class="a_block">
+    
+                                                <label for="mem_name" class="a_lab">
+    
+                                                    <span class="vt_top red">*</span>
+    
+                                                    <span class="vt_top">이름</span>
+    
+                                                </label>
+    
+                                                <div class="a_input">
+    
+                                                    <input type="text" name="mem_name" id="mem_name" class="text" value="김철수">
+    
+                                                </div>
+    
+                                            </div>
+    
+                                            <div class="a_block">
+    
+                                                <label class="a_lab">
+    
+                                                    <span class="vt_top red">*</span>
+    
+                                                    <span class="vt_top">성별</span>
+    
+                                                </label>
+    
+                                                <div class="a_input">
+    
+                                                    <div class="mr50">
+    
+                                                        <input type="radio" name="gender" id="male" class="radio" checked>
+    
+                                                        <label for="male" class="r_lab">남</label>
+    
+                                                    </div>
+    
+                                                    <div class="mr50">
+    
+                                                        <input type="radio" name="gender" id="female" class="radio">
+    
+                                                        <label for="female" class="r_lab">여</label>
+    
+                                                    </div>
+    
+                                                </div>
+    
+                                            </div>
+    
+                                            <div class="a_block">
+    
+                                                <label for="height" class="a_lab">
+    
+                                                    <span class="vt_top red">*</span>
+    
+                                                    <span class="vt_top">키</span>
+    
+                                                </label>
+    
+                                                <div class="a_input">
+    
+                                                    <input type="number" name="height" id="height" class="text2" value="175">
+    
+                                                    <span class="vt_mid">cm</span>
+    
+                                                </div>
+    
+                                            </div>
+    
+                                            <div class="a_block">
+    
+                                                <label for="weight" class="a_lab">
+    
+                                                    <span class="vt_top red">*</span>
+    
+                                                    <span class="vt_top">몸무게</span>
+    
+                                                </label>
+    
+                                                <div class="a_input">
+    
+                                                    <input type="number" name="weight" id="weight" class="text2" value="75">
+    
+                                                    <span class="vt_mid">kg</span>
+    
+                                                </div>
+    
+                                            </div>
+    
+                                            <div class="a_block">
+    
+                                                <label for="birth" class="a_lab">
+    
+                                                    <span class="vt_top red">*</span>
+    
+                                                    <span class="vt_top">생년월일</span>
+    
+                                                </label>
+    
+                                                <div class="a_input">
+    
+                                                    <input type="date" name="birth" id="birth" class="date" value="1990-09-01">
+    
+                                                </div>
+    
+                                            </div>
+    
+                                            <div class="a_block">
+    
+                                                <label for="rate" class="a_lab">
+    
+                                                    <span class="vt_top">안정 심박수</span>
+    
+                                                </label>
+    
+                                                <div class="a_input">
+    
+                                                    <input type="number" name="rate" id="rate" class="text2" value="90">
+    
+                                                    <span class="vt_mid">bpm</span>
+    
+                                                </div>
+    
+                                            </div>
+    
+                                            <div class="a_block">
+    
+                                                <label for="rate_max" class="a_lab">
+    
+                                                    <span class="vt_top">최대 심박수</span>
+    
+                                                </label>
+    
+                                                <div class="a_input">
+    
+                                                    <input type="number" name="rate_max" id="rate_max" class="text2" value="120">
+    
+                                                    <span class="vt_mid">bpm</span>
+    
+                                                </div>
+    
+                                            </div>
+    
+                                            <div class="a_block">
+    
+                                                <label for="mem_email" class="a_lab">
+    
+                                                    <span class="vt_top red">*</span>
+    
+                                                    <span class="vt_top">이메일</span>
+    
+                                                </label>
+    
+                                                <div class="a_input">
+    
+                                                    <input type="email" name="mem_email" id="mem_email" class="text" value="test1234@naver.com">
+    
+                                                </div>
+    
+                                            </div>
+    
+                                            <div class="a_block">
+    
+                                                <label for="mem_phone" class="a_lab">
+    
+                                                    <span class="vt_top red">*</span>
+    
+                                                    <span class="vt_top">휴대폰</span>
+    
+                                                </label>
+    
+                                                <div class="a_input">
+    
+                                                    <input type="number" name="mem_phone" id="mem_phone" class="text" value="01012345678">
+    
+                                                </div>
+    
+                                            </div>
+    
+                                        </div><!--a_wrap-->
+    
+                                        <div class="btn_wrap">
+    
+                                            <button type="button" class="btns btn1">저장</button>
+    
+                                            <button type="button" class="btns btn2">취소</button>
+    
+                                        </div>
+    
+                                    </form>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+
+</div> <!--con_inner-->
+
+<script>
+
+    $('#birth').change(function(){
+
+        $(this).removeClass('nodate')
+
+    });
+
+</script>
+
+
+</body>
+
+</html>

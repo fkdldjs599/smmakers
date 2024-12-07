@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - SHIN HYERIM</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<header class="header">
+    <div class="b_head">
+        <button type="button" class="ham vt_mid" onclick="location.href='index.html'">
+            <img src="img/ham.png" alt="메뉴">
+        </button>
+        <h1 class="h1 vt_mid">
+            <a href="index.html">
+                <img src="img/logo.png" alt="CARDIO LINK">
+            </a>
+        </h1>
+    </div>   
+</header>
+
+<div class="con_inner">
+
+    <div class="side_bar">
+        <div class="my_area">
+            <h2 class="my_h2">에스엠메이커스</h2>
+            <div class="my_div">smmakers@smmakers.com</div>
+            <button type="button" class="logout" onclick="location.href='login.html'">로그아웃</button>
+        </div>
+        <nav class="nav">
+            <a href="index.html" class="nav_a">
+                <img src="img/nav_1.png" alt="홈">
+                <span class="nav_sp">홈</span>
+            </a>
+            <a href="history.html" class="nav_a on">
+                <img src="img/nav_2_on.png" alt="이력 관리">
+                <span class="nav_sp">이력 관리</span>
+            </a>
+
+            <a href="member.html" class="nav_a">
+                <img src="img/nav_3.png" alt="회원 관리">
+                <span class="nav_sp">회원 관리</span>
+            </a>
+            <a href="class.html" class="nav_a">
+                <img src="img/nav_4.png" alt="클래스 관리">
+                <span class="nav_sp">클래스 관리</span>
+            </a>
+            <a href="cardio_link.html" class="nav_a">
+                <img src="img/nav_5.png" alt="카디오링크 관리">
+                <span class="nav_sp">카디오링크 관리</span>
+            </a>
+
+            <a href="set.html" class="nav_a set_a">
+                <img src="img/nav_6.png" alt="설정">
+                <span class="nav_sp">설정</span>
+            </a>
+            <!-- <div class="sub_wrap">
+                <a href="set.html" class="sub_a <?=$page['sub'] == 'sub1' ? 'on' :''">사용자 정보</a>
+                <a href="set_2.html" class="sub_a <?=$page['sub'] == 'sub2' ? 'on' :''">허브 설정</a>
+                <a href="set_3.html" class="sub_a <?=$page['sub'] == 'sub3' ? 'on' :''">사용안내</a>
+                <a href="set_4.html" class="sub_a <?=$page['sub'] == 'sub4' ? 'on' :''">로고 변경</a>
+                <a href="set_5.html" class="sub_a <?=$page['sub'] == 'sub5' ? 'on' :''">앱 정보</a>
+            </div> -->
+        </nav>
+    </div>
+
+    <section id="history" class="section">
+
+        <div class="contents">
+    
+            <div class="white_bg">
+    
+                <div class="title_area">
+    
+                    <h3 class="c_h3">이력 관리</h3>
+    
+                    <div class="sub">회원들의 운동 내역을 확인하실 수 있습니다</div>
+    
+                </div>
+    
+                <div class="h_con">
+    
+                    <div class="h_left vt_top">
+    
+                        <div class="d_tab d_tab1 on">
+    
+                            <div class="cal">
+    
+                                <div class="month">2024년 01월</div>
+    
+                                <table class="h_table">
+    
+                                    <tr class="first">
+    
+                                        <th class="th">일</th>
+    
+                                        <th class="th">월</th>
+    
+                                        <th class="th">화</th>
+    
+                                        <th class="th">수</th>
+    
+                                        <th class="th">목</th>
+    
+                                        <th class="th">금</th>
+    
+                                        <th class="th">토</th>
+    
+                                    </tr>
+    
+                                    <tr>
+    
+                                        <td class="td"></td>
+    
+                                        <td class="td">1</td>
+    
+                                        <td class="td">2</td>
+    
+                                        <td class="td">3</td>
+    
+                                        <td class="td">4</td>
+    
+                                        <td class="td">5</td>
+    
+                                        <td class="td">6</td>
+    
+                                    </tr>
+    
+                                    <tr>
+    
+                                        <td class="td">7</td>
+    
+                                        <td class="td">8</td>
+    
+                                        <td class="td">9</td>
+    
+                                        <td class="td">10</td>
+    
+                                        <td class="td">11</td>
+    
+                                        <td class="td">12</td>
+    
+                                        <td class="td">13</td>
+    
+                                    </tr>
+    
+                                    <tr>
+    
+                                        <td class="td">14</td>
+    
+                                        <td class="td">15</td>
+    
+                                        <td class="td">16</td>
+    
+                                        <td class="td">17</td>
+    
+                                        <td class="td on today">18</td>
+    
+                                        <td class="td">19</td>
+    
+                                        <td class="td">20</td>
+    
+                                    </tr>
+    
+                                    <tr>
+    
+                                        <td class="td">21</td>
+    
+                                        <td class="td">22</td>
+    
+                                        <td class="td">23</td>
+    
+                                        <td class="td">24</td>
+    
+                                        <td class="td">25</td>
+    
+                                        <td class="td">26</td>
+    
+                                        <td class="td">27</td>
+    
+                                    </tr>
+    
+                                    <tr>
+    
+                                        <td class="td">28</td>
+    
+                                        <td class="td">29</td>
+    
+                                        <td class="td">30</td>
+    
+                                        <td class="td">31</td>
+    
+                                        <td class="td"></td>
+    
+                                        <td class="td"></td>
+    
+                                        <td class="td"></td>
+    
+                                    </tr>
+    
+                                </table>
+    
+                            </div>  
+    
+                        </div>
+    
+                        <div class="d_tab d_tab2">
+    
+                            <div class="title">기간 선택</div>
+    
+                            <div class="date_wrap">
+    
+                                <div class="d_block">
+    
+                                    <label for="start_date" class="lab">시작일</label>
+    
+                                    <input type="text" id="start_date" class="input">
+    
+                                </div>
+    
+                                <div class="d_block">
+    
+                                    <label for="end_date" class="lab">종료일</label>
+    
+                                    <input type="text" id="end_date" class="input">
+    
+                                </div>
+    
+                            </div>
+    
+                            <script>
+    
+                                $(function(){
+    
+                                    $('#start_date').datepicker({
+    
+                                        dateFormat : 'yy-mm-dd',
+    
+                                    });
+    
+                                    $('#end_date').datepicker({
+    
+                                        dateFormat : 'yy-mm-dd',
+    
+                                    });
+    
+                                })
+    
+                            </script>
+    
+                            <div class="btn_area">
+    
+                                <button type="button" class="i_btn">조회</button>
+    
+                            </div>
+    
+                        </div>
+    
+                        <div class="btn_area">
+    
+                            <button type="button" class="btn_common bc1">오늘 이력 보기</button>
+    
+                            <button type="button" class="btn_common bc2">과거 이력 보기</button>
+    
+                        </div>
+    
+                    </div>
+    
+                    <div class="h_right vt_top">
+    
+                        <div class="border">
+    
+                            <div class="tab tab1 on">
+    
+                                <div class="scroll_box">
+    
+                                    <div class="oneday_wrap">
+    
+                                        <div class="date">2024.01.18</div>
+    
+                                        <div class="gray_box">
+    
+                                            <div class="gb_left vt_mid">
+    
+                                                <div class="gb_line">
+    
+                                                    <div class="left vt_mid">일시</div>
+    
+                                                    <div class="right vt_mid">2024-01-18 08:32</div>
+    
+                                                </div>
+    
+                                                <div class="gb_line">
+    
+                                                    <div class="left vt_mid">클래스</div>
+    
+                                                    <div class="right vt_mid">그라운드 웨이트</div>
+    
+                                                </div>
+    
+                                                <div class="gb_line">
+    
+                                                    <div class="left vt_mid">참여인원</div>
+    
+                                                    <div class="right vt_mid">3명</div>
+    
+                                                </div>
+    
+                                            </div>
+    
+                                            <div class="gb_right vt_mid">
+    
+                                                <div class="gb_line">
+    
+                                                    <div class="left vt_mid">총 운동시간</div>
+    
+                                                    <div class="right vt_mid">00:00:29</div>
+    
+                                                </div>
+    
+                                                <div class="gb_line">
+    
+                                                    <div class="left vt_mid">평균 심박수</div>
+    
+                                                    <div class="right vt_mid">118 BPM</div>
+    
+                                                </div>
+    
+                                                <div class="gb_line">
+    
+                                                    <div class="left vt_mid">평균칼로리</div>
+    
+                                                    <div class="right vt_mid">10 kcal</div>
+    
+                                                </div>
+    
+                                            </div>
+    
+                                        </div>
+    
+                                        <div class="mem_list">
+    
+                                            <button type="button" class="list_a">김철수</button>
+    
+                                            <button type="button" class="list_a">김수남</button>
+    
+                                            <button type="button" class="list_a">최예나</button>
+    
+                                            <button type="button" class="list_a">이영수</button>
+    
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="down_area">
+    
+                                    <button type="button" class="down_btn">다운로드</button>
+    
+                                </div>
+    
+                            </div>
+    
+    
+    
+                            <div class="tab tab2">
+    
+                                <div class="date">2024.01.18</div>
+    
+                                <div class="gray_box">
+    
+                                    <div class="gb_left vt_mid">
+    
+                                        <div class="gb_line">
+    
+                                            <div class="left vt_mid">일시</div>
+    
+                                            <div class="right vt_mid">2024-01-18 08:32</div>
+    
+                                        </div>
+    
+                                        <div class="gb_line">
+    
+                                            <div class="left vt_mid">클래스</div>
+    
+                                            <div class="right vt_mid">그라운드 웨이트</div>
+    
+                                        </div>
+    
+                                        <div class="gb_line">
+    
+                                            <div class="left vt_mid">참여인원</div>
+    
+                                            <div class="right vt_mid">3명</div>
+    
+                                        </div>
+    
+                                    </div>
+    
+                                    <div class="gb_right vt_mid">
+    
+                                        <div class="gb_line">
+    
+                                            <div class="left vt_mid">총 운동시간</div>
+    
+                                            <div class="right vt_mid">00:00:29</div>
+    
+                                        </div>
+    
+                                        <div class="gb_line">
+    
+                                            <div class="left vt_mid">평균 심박수</div>
+    
+                                            <div class="right vt_mid">118 BPM</div>
+    
+                                        </div>
+    
+                                        <div class="gb_line">
+    
+                                            <div class="left vt_mid">평균칼로리</div>
+    
+                                            <div class="right vt_mid">10 kcal</div>
+    
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="personal">
+    
+                                    <h4 class="per_info">
+    
+                                        <div class="sp_left vt_bot">
+    
+                                            <span class="fs36">김철수</span>님의 운동정보
+    
+                                        </div>
+    
+                                        <div class="sp_cen vt_bot">
+    
+                                            일시: 2023-11-02  18:18
+    
+                                        </div>
+    
+                                        <div class="sp_right vt_bot">
+    
+                                            클래스: 쫑
+    
+                                        </div>
+    
+                                    </h4><!--per_info-->
+    
+                                    <div class="gray_box pd55">
+    
+                                        <div class="wid25 vt_mid">
+    
+                                            <div class="gb_icon vt_mid">
+    
+                                                <img src="img/h_icon1.png" alt="운동시간">
+    
+                                            </div>
+    
+                                            <div class="gb_txt vt_mid">
+    
+                                                <div class="gbt_top">운동시간</div>
+    
+                                                <div class="gbt_bot">00:06:31</div>
+    
+                                            </div>
+    
+                                        </div>
+    
+                                        <div class="wid25 vt_mid">
+    
+                                            <div class="gb_icon vt_mid">
+    
+                                                <img src="img/h_icon2.png" alt="소모 칼로리">
+    
+                                            </div>
+    
+                                            <div class="gb_txt vt_mid">
+    
+                                                <div class="gbt_top">소모 칼로리</div>
+    
+                                                <div class="gbt_bot">112kcal</div>
+    
+                                            </div>
+    
+                                        </div>
+    
+                                        <div class="wid25 vt_mid">
+    
+                                            <div class="gb_icon vt_mid">
+    
+                                                <img src="img/h_icon3.png" alt="평균 심박수">
+    
+                                            </div>
+    
+                                            <div class="gb_txt vt_mid">
+    
+                                                <div class="gbt_top">평균 심박수</div>
+    
+                                                <div class="gbt_bot">156bpm</div>
+    
+                                            </div>
+    
+                                        </div>
+    
+                                        <div class="wid25 vt_mid">
+    
+                                            <div class="gb_icon vt_mid">
+    
+                                                <img src="img/h_icon3.png" alt="운동시간">
+    
+                                            </div>
+    
+                                            <div class="gb_txt vt_mid">
+    
+                                                <div class="gbt_top">최대 심박수</div>
+    
+                                                <div class="gbt_bot">201bpm</div>
+    
+                                            </div>
+    
+                                        </div>
+    
+                                    </div>
+    
+    
+    
+                                    <div class="chart">
+    
+                                        <h5 class="c_tit">HR Data Statistics</h5>
+    
+                                        <div class="chart1">
+    
+                                            <!--도넛차트-->
+    
+                                            <div class="ct1_area vt_mid">
+    
+                                                <canvas id="doughnut"></canvas>
+    
+                                            </div>
+    
+    
+    
+                                            <!--막대차트-->
+    
+                                            <div class="ct2_area vt_mid">
+    
+                                                <div class="ct2_line">
+    
+                                                    <div class="ct2_left vt_mid">50 ~ 60%</div>
+    
+                                                    <div class="ct2_cen vt_mid">
+    
+                                                        <div class="gray_bar">
+    
+                                                            <div class="color_bar black"></div>
+    
+                                                        </div>
+    
+                                                    </div>
+    
+                                                    <div class="ct2_right vt_mid">6%</div>
+    
+                                                </div>
+    
+                                                <div class="ct2_line">
+    
+                                                    <div class="ct2_left vt_mid">60 ~ 70%</div>
+    
+                                                    <div class="ct2_cen vt_mid">
+    
+                                                        <div class="gray_bar">
+    
+                                                            <div class="color_bar blue"></div>
+    
+                                                        </div>
+    
+                                                    </div>
+    
+                                                    <div class="ct2_right vt_mid">16%</div>
+    
+                                                </div>
+    
+                                                <div class="ct2_line">
+    
+                                                    <div class="ct2_left vt_mid">70 ~ 80%</div>
+    
+                                                    <div class="ct2_cen vt_mid">
+    
+                                                        <div class="gray_bar">
+    
+                                                            <div class="color_bar green"></div>
+    
+                                                        </div>
+    
+                                                    </div>
+    
+                                                    <div class="ct2_right vt_mid">28%</div>
+    
+                                                </div>
+    
+                                                <div class="ct2_line">
+    
+                                                    <div class="ct2_left vt_mid">80 ~ 90%</div>
+    
+                                                    <div class="ct2_cen vt_mid">
+    
+                                                        <div class="gray_bar">
+    
+                                                            <div class="color_bar orange"></div>
+    
+                                                        </div>
+    
+                                                    </div>
+    
+                                                    <div class="ct2_right vt_mid">13%</div>
+    
+                                                </div>
+    
+                                                <div class="ct2_line">
+    
+                                                    <div class="ct2_left vt_mid">90 ~ 100%</div>
+    
+                                                    <div class="ct2_cen vt_mid">
+    
+                                                        <div class="gray_bar">
+    
+                                                            <div class="color_bar red"></div>
+    
+                                                        </div>
+    
+                                                    </div>
+    
+                                                    <div class="ct2_right vt_mid">37%</div>
+    
+                                                </div>
+    
+                                            </div>
+    
+                                        </div>
+    
+    
+    
+                                        <div class="c_tit2">
+    
+                                            <div class="ct2_1 vt_mid">회복률: 0%</div>
+    
+                                            <label for="time" class="ct2_2 vt_mid">직접입력: </label>
+    
+                                            <div class="ct2_3 vt_mid">
+    
+                                                <img src="img/icon_time.png" alt="직접입력">
+    
+                                                <input type="text" name="time" id="time" class="input" value="00:00:00">
+    
+                                            </div>
+    
+                                        </div>
+    
+    
+    
+                                        <!--선 차트-->
+    
+                                        <div class="chart2">
+    
+                                            <canvas id="line-chart"></canvas>
+    
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div><!--border-->
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+
+</div> <!--con_inner-->
+
+</body>
+
+</html>

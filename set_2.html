@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - SHIN HYERIM</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+
+<header class="header">
+    <div class="b_head">
+        <button type="button" class="ham vt_mid" onclick="location.href='index.html'">
+            <img src="img/ham.png" alt="메뉴">
+        </button>
+        <h1 class="h1 vt_mid">
+            <a href="index.html">
+                <img src="img/logo.png" alt="CARDIO LINK">
+            </a>
+        </h1>
+    </div>   
+</header>
+
+<div class="con_inner">
+
+    <div class="side_bar">
+        <div class="my_area">
+            <h2 class="my_h2">에스엠메이커스</h2>
+            <div class="my_div">smmakers@smmakers.com</div>
+            <button type="button" class="logout" onclick="location.href='login.html'">로그아웃</button>
+        </div>
+        <nav class="nav">
+            <a href="index.html" class="nav_a">
+                <img src="img/nav_1.png" alt="홈">
+                <span class="nav_sp">홈</span>
+            </a>
+            <a href="history.html" class="nav_a">
+                <img src="img/nav_2.png" alt="이력 관리">
+                <span class="nav_sp">이력 관리</span>
+            </a>
+
+            <a href="member.html" class="nav_a">
+                <img src="img/nav_3.png" alt="회원 관리">
+                <span class="nav_sp">회원 관리</span>
+            </a>
+            <a href="class.html" class="nav_a">
+                <img src="img/nav_4.png" alt="클래스 관리">
+                <span class="nav_sp">클래스 관리</span>
+            </a>
+            <a href="cardio_link.html" class="nav_a">
+                <img src="img/nav_5.png" alt="카디오링크 관리">
+                <span class="nav_sp">카디오링크 관리</span>
+            </a>
+
+            <a href="set.html" class="nav_a set_a on">
+                <img src="img/nav_6_on.png" alt="설정">
+                <span class="nav_sp">설정</span>
+            </a>
+            <div class="sub_wrap">
+                <a href="set.html" class="sub_a">사용자 정보</a>
+                <a href="set_2.html" class="sub_a on">허브 설정</a>
+                <a href="set_3.html" class="sub_a">사용안내</a>
+                <a href="set_4.html" class="sub_a">로고 변경</a>
+                <a href="set_5.html" class="sub_a">앱 정보</a>
+            </div>
+        </nav>
+    </div>
+
+    <section id="set2" class="section">
+
+        <div class="contents">
+    
+            <div class="white_bg">
+    
+                <div class="title_area">
+    
+                    <h3 class="c_h3">허브 설정</h3>
+    
+                    <div class="sub">허브를 설정할 수 있습니다.</div>
+    
+                </div>
+    
+    
+    
+                <div class="s2_wrap">
+    
+                    <div class="s2_left vt_top">
+    
+                        <button type="button" class="h_btn">신규 허브 등록</button>
+    
+    
+    
+                        <button type="button" class="hub">에스엠메이커스</button>
+    
+                        <button type="button" class="hub">에스엠메이커스</button>
+    
+                    </div>
+    
+                    <div class="s2_right vt_top">
+    
+    
+    
+                    <!--
+    
+                        tab1 = 허브를 선택해주세요
+    
+                        tab2 = 허브 클릭했을때
+    
+                        tab3 = 허브 수정
+    
+                        tab4 = 새 허브 추가
+    
+                    -->
+    
+    
+    
+                        <div class="tab tab1 on">허브를 선택해주세요</div>
+    
+                        <div class="tab tab2">
+    
+                            <div class="t_tit">에스엠메이커스</div>
+    
+                            <div class="t_con">
+    
+                                <label class="tc_left vt_mid">지점명</label>
+    
+                                <div class="tc_right vt_mid">에스엠메이커스</div>
+    
+                            </div>
+    
+                            <div class="t_con">
+    
+                                <label class="tc_left vt_mid">시리얼 넘버</label>
+    
+                                <div class="tc_right vt_mid">0007011</div>
+    
+                            </div>
+    
+                            <div class="t_con">
+    
+                                <label class="tc_left vt_mid">장치 유형</label>
+    
+                                <div class="tc_right vt_mid">허브</div>
+    
+                            </div>
+    
+                            <div class="btn_wrap">
+    
+                                <button type="button" class="tcb tcb1">수정</button>
+    
+                                <button type="button" class="tcb tcb2">삭제</button>
+    
+                            </div>
+    
+                        </div>
+    
+                        <div class="tab tab3">
+    
+                            <div class="t_tit">에스엠메이커스</div>
+    
+                            <div class="t_con">
+    
+                                <label class="tc_left vt_mid" for="store">지점명</label>
+    
+                                <div class="tc_right vt_mid">
+    
+                                    <input type="text" name="store" id="store" class="input" value="에스엠메이커스">
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="t_con">
+    
+                                <label class="tc_left vt_mid" for="number">시리얼 넘버</label>
+    
+                                <div class="tc_right vt_mid">
+    
+                                    <input type="text" name="number" id="number" class="input" value="104354">
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="t_con">
+    
+                                <label class="tc_left vt_mid">장치 유형</label>
+    
+                                <div class="tc_right vt_mid">
+    
+                                    <div class="r_wrap vt_mid">
+    
+                                        <input type="radio" name="type" id="hub" class="radio" checked>
+    
+                                        <label for="hub" class="r_lab">허브</label>
+    
+                                    </div>
+    
+                                    <div class="r_wrap vt_mid">
+    
+                                        <input type="radio" name="type" id="reader" class="radio">
+    
+                                        <label for="reader" class="r_lab">리더기</label>
+    
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="btn_wrap">
+    
+                                <button type="button" class="btns btn1">저장</button>
+    
+                                <button type="button" class="btns btn2">취소</button>
+    
+                            </div>
+    
+                        </div>
+    
+                        <div class="tab tab4">
+    
+                            <div class="t_tit">새 허브 추가</div>
+    
+                            <div class="t_con">
+    
+                                <label class="tc_left vt_mid" for="new_store">지점명</label>
+    
+                                <div class="tc_right vt_mid">
+    
+                                    <input type="text" name="new_store" id="new_store" class="input" value="">
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="t_con">
+    
+                                <label class="tc_left vt_mid" for="new_number">시리얼 넘버</label>
+    
+                                <div class="tc_right vt_mid">
+    
+                                    <input type="text" name="new_number" id="new_number" class="input" value="">
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="t_con">
+    
+                                <label class="tc_left vt_mid">장치 유형</label>
+    
+                                <div class="tc_right vt_mid">
+    
+                                    <div class="r_wrap vt_mid">
+    
+                                        <input type="radio" name="new_type" id="new_hub" class="radio" checked>
+    
+                                        <label for="new_hub" class="r_lab">허브</label>
+    
+                                    </div>
+    
+                                    <div class="r_wrap vt_mid">
+    
+                                        <input type="radio" name="new_type" id="new_reader" class="radio">
+    
+                                        <label for="new_reader" class="r_lab">리더기</label>
+    
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="btn_wrap">
+    
+                                <button type="button" class="btns btn1">저장</button>
+    
+                                <button type="button" class="btns btn2">취소</button>
+    
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+
+</div> <!--con_inner-->
+
+
+
+</body>
+
+</html>

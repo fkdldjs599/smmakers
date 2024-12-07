@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - SHIN HYERIM</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+
+<header class="header">
+    <div class="b_head">
+        <button type="button" class="ham vt_mid" onclick="location.href='index.html'">
+            <img src="img/ham.png" alt="메뉴">
+        </button>
+        <h1 class="h1 vt_mid">
+            <a href="index.html">
+                <img src="img/logo.png" alt="CARDIO LINK">
+            </a>
+        </h1>
+    </div>   
+</header>
+
+<div class="con_inner">
+
+    <div class="side_bar">
+        <div class="my_area">
+            <h2 class="my_h2">에스엠메이커스</h2>
+            <div class="my_div">smmakers@smmakers.com</div>
+            <button type="button" class="logout" onclick="location.href='login.html'">로그아웃</button>
+        </div>
+        <nav class="nav">
+            <a href="index.html" class="nav_a">
+                <img src="img/nav_1.png" alt="홈">
+                <span class="nav_sp">홈</span>
+            </a>
+            <a href="history.html" class="nav_a">
+                <img src="img/nav_2.png" alt="이력 관리">
+                <span class="nav_sp">이력 관리</span>
+            </a>
+
+            <a href="member.html" class="nav_a">
+                <img src="img/nav_3.png" alt="회원 관리">
+                <span class="nav_sp">회원 관리</span>
+            </a>
+            <a href="class.html" class="nav_a">
+                <img src="img/nav_4.png" alt="클래스 관리">
+                <span class="nav_sp">클래스 관리</span>
+            </a>
+            <a href="cardio_link.html" class="nav_a">
+                <img src="img/nav_5.png" alt="카디오링크 관리">
+                <span class="nav_sp">카디오링크 관리</span>
+            </a>
+
+            <a href="set.html" class="nav_a set_a on">
+                <img src="img/nav_6_on.png" alt="설정">
+                <span class="nav_sp">설정</span>
+            </a>
+            <div class="sub_wrap">
+                <a href="set.html" class="sub_a">사용자 정보</a>
+                <a href="set_2.html" class="sub_a">허브 설정</a>
+                <a href="set_3.html" class="sub_a">사용안내</a>
+                <a href="set_4.html" class="sub_a on">로고 변경</a>
+                <a href="set_5.html" class="sub_a">앱 정보</a>
+            </div>
+        </nav>
+    </div>
+
+    <section id="set4" class="section">
+
+        <div class="contents">
+    
+            <div class="white_bg">
+    
+                <div class="title_area">
+    
+                    <h3 class="c_h3">로고 변경</h3>
+    
+                    <div class="sub">로고를 사용자에 맞게 관리하실 수 있습니다.</div>
+    
+                </div>
+    
+                <div class="s_border">
+    
+                    <form name="logo">
+    
+                        <div class="inner600">
+    
+                            <div class="l_tit">로고</div>
+    
+                            <div class="l_sub">디스플레이 대기 중 노출되는 로고를 변경할 수 있습니다.</div>
+    
+                            <div class="img_area">
+    
+                                <div class="grid">
+    
+                                    <img src="" id="preview">
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="file_area">
+    
+                                <input type="file" name="customFile" id="customFile" class="customFile" onchange="readURL(this)">
+    
+                                <input type="text" name="fileName" id="fileName" class="fileName" placeholder="선택된 파일 없음">
+    
+                                <label for="customFile" class="f_btn">파일 선택</label>
+    
+                            </div>
+    
+                        </div>
+    
+                        <div class="btn_wrap">
+    
+                            <button type="button" class="btns btn1">저장</button>
+    
+                        </div>
+    
+                    </form>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+    
+
+</div> <!--con_inner-->
+
+<script>
+
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function(e) {
+            document.getElementById('preview').src = e.target.result;
+            };
+            reader.readAsDataURL(input.files[0]);
+        } else {
+            document.getElementById('preview').src = "";
+        }
+    }
+    
+    
+    $("#customFile").on('change',function(){
+        var fileName = $("#customFile").val();
+        console.log(fileName)
+        $("#fileName").val(fileName);
+    });
+    
+    </script>
+
+</body>
+
+</html>

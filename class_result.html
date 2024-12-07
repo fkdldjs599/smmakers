@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - SHIN HYERIM</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+
+<header class="header">
+    <div class="b_head">
+        <button type="button" class="ham vt_mid" onclick="location.href='index.html'">
+            <img src="img/ham.png" alt="메뉴">
+        </button>
+        <h1 class="h1 vt_mid">
+            <a href="index.html">
+                <img src="img/logo.png" alt="CARDIO LINK">
+            </a>
+        </h1>
+    </div>   
+</header>
+
+<div class="con_inner">
+
+    <div class="side_bar">
+        <div class="my_area">
+            <h2 class="my_h2">에스엠메이커스</h2>
+            <div class="my_div">smmakers@smmakers.com</div>
+            <button type="button" class="logout" onclick="location.href='login.html'">로그아웃</button>
+        </div>
+        <nav class="nav">
+            <a href="index.html" class="nav_a">
+                <img src="img/nav_1.png" alt="홈">
+                <span class="nav_sp">홈</span>
+            </a>
+            <a href="history.html" class="nav_a">
+                <img src="img/nav_2.png" alt="이력 관리">
+                <span class="nav_sp">이력 관리</span>
+            </a>
+
+            <a href="member.html" class="nav_a">
+                <img src="img/nav_3.png" alt="회원 관리">
+                <span class="nav_sp">회원 관리</span>
+            </a>
+            <a href="class.html" class="nav_a on">
+                <img src="img/nav_4_on.png" alt="클래스 관리">
+                <span class="nav_sp">클래스 관리</span>
+            </a>
+            <a href="cardio_link.html" class="nav_a">
+                <img src="img/nav_5.png" alt="카디오링크 관리">
+                <span class="nav_sp">카디오링크 관리</span>
+            </a>
+
+            <a href="set.html" class="nav_a set_a">
+                <img src="img/nav_6.png" alt="설정">
+                <span class="nav_sp">설정</span>
+            </a>
+        </nav>
+    </div>
+
+    <section id="class_result" class="section">
+
+        <div class="contents">
+    
+            <div class="white_bg">
+    
+    
+    
+                <div class="r_wrap">
+    
+                    <img src="img/c_result.png" alt="완료">
+    
+                    <h3 class="blue">
+    
+                        <div class="pos">
+    
+                            <span class="h3_txt">7월 25일 그라운드 웨이트 1 완료</span>
+    
+                            <button type="button" class="down_btn">다운로드</button>
+    
+                        </div>
+    
+                    </h3>
+    
+                    <div class="back_wrap">
+    
+                        <button type="button" class="back_btn" onclick="location.href='class.html'">
+    
+                            클래스 정보 화면으로 돌아가기
+    
+                        </button>
+    
+                    </div>
+    
+                </div>
+    
+    
+    
+                <div class="rb_wrap">
+    
+                    <div class="res_box">
+    
+                        <div class="rb1">김철수</div>
+    
+                        <div class="rb2">
+    
+                            <div class="rb2_block">
+    
+                                <div class="rb2_l vt_mid">운동시간</div>
+    
+                                <div class="rb2_r vt_mid">00:06:31</div>
+    
+                            </div>
+    
+                            <div class="rb2_block">
+    
+                                <div class="rb2_l vt_mid">소모 칼로리</div>
+    
+                                <div class="rb2_r vt_mid">112 kacl</div>
+    
+                            </div>
+    
+                            <div class="rb2_block">
+    
+                                <div class="rb2_l vt_mid">평균 심박수</div>
+    
+                                <div class="rb2_r vt_mid">156 bpm</div>
+    
+                            </div>
+    
+                            <div class="rb2_block">
+    
+                                <div class="rb2_l vt_mid">최대 심박수</div>
+    
+                                <div class="rb2_r vt_mid">201 bpm</div>
+    
+                            </div>
+    
+                        </div>
+    
+                        <div class="rb3">
+    
+                            <div class="rb3_t">공유하기</div>
+    
+                            <div class="rb3_b">
+    
+                                <button type="button" class="share_btn sb1">
+    
+                                    <img src="img/s_kakao.png" alt="카카오톡 공유하기">
+    
+                                </button>
+    
+                                <button type="button" class="share_btn sb2">
+    
+                                    <img src="img/s_email.png" alt="이메일 공유하기">
+    
+                                </button>
+    
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+                    <div class="res_box">
+    
+                        <div class="rb1">김철수</div>
+    
+                        <div class="rb2">
+    
+                            <div class="rb2_block">
+    
+                                <div class="rb2_l vt_mid">운동시간</div>
+    
+                                <div class="rb2_r vt_mid">00:06:31</div>
+    
+                            </div>
+    
+                            <div class="rb2_block">
+    
+                                <div class="rb2_l vt_mid">소모 칼로리</div>
+    
+                                <div class="rb2_r vt_mid">112 kacl</div>
+    
+                            </div>
+    
+                            <div class="rb2_block">
+    
+                                <div class="rb2_l vt_mid">평균 심박수</div>
+    
+                                <div class="rb2_r vt_mid">156 bpm</div>
+    
+                            </div>
+    
+                            <div class="rb2_block">
+    
+                                <div class="rb2_l vt_mid">최대 심박수</div>
+    
+                                <div class="rb2_r vt_mid">201 bpm</div>
+    
+                            </div>
+    
+                        </div>
+    
+                        <div class="rb3">
+    
+                            <div class="rb3_t">공유하기</div>
+    
+                            <div class="rb3_b">
+    
+                                <button type="button" class="share_btn sb1">
+    
+                                    <img src="img/s_kakao.png" alt="카카오톡 공유하기">
+    
+                                </button>
+    
+                                <button type="button" class="share_btn sb2">
+    
+                                    <img src="img/s_email.png" alt="이메일 공유하기">
+    
+                                </button>
+    
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+                    <div class="res_box">
+    
+                        <div class="rb1">김철수</div>
+    
+                        <div class="rb2">
+    
+                            <div class="rb2_block">
+    
+                                <div class="rb2_l vt_mid">운동시간</div>
+    
+                                <div class="rb2_r vt_mid">00:06:31</div>
+    
+                            </div>
+    
+                            <div class="rb2_block">
+    
+                                <div class="rb2_l vt_mid">소모 칼로리</div>
+    
+                                <div class="rb2_r vt_mid">112 kacl</div>
+    
+                            </div>
+    
+                            <div class="rb2_block">
+    
+                                <div class="rb2_l vt_mid">평균 심박수</div>
+    
+                                <div class="rb2_r vt_mid">156 bpm</div>
+    
+                            </div>
+    
+                            <div class="rb2_block">
+    
+                                <div class="rb2_l vt_mid">최대 심박수</div>
+    
+                                <div class="rb2_r vt_mid">201 bpm</div>
+    
+                            </div>
+    
+                        </div>
+    
+                        <div class="rb3">
+    
+                            <div class="rb3_t">공유하기</div>
+    
+                            <div class="rb3_b">
+    
+                                <button type="button" class="share_btn sb1">
+    
+                                    <img src="img/s_kakao.png" alt="카카오톡 공유하기">
+    
+                                </button>
+    
+                                <button type="button" class="share_btn sb2">
+    
+                                    <img src="img/s_email.png" alt="이메일 공유하기">
+    
+                                </button>
+    
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+                    <div class="res_box">
+    
+                        <div class="rb1">김철수</div>
+    
+                        <div class="rb2">
+    
+                            <div class="rb2_block">
+    
+                                <div class="rb2_l vt_mid">운동시간</div>
+    
+                                <div class="rb2_r vt_mid">00:06:31</div>
+    
+                            </div>
+    
+                            <div class="rb2_block">
+    
+                                <div class="rb2_l vt_mid">소모 칼로리</div>
+    
+                                <div class="rb2_r vt_mid">112 kacl</div>
+    
+                            </div>
+    
+                            <div class="rb2_block">
+    
+                                <div class="rb2_l vt_mid">평균 심박수</div>
+    
+                                <div class="rb2_r vt_mid">156 bpm</div>
+    
+                            </div>
+    
+                            <div class="rb2_block">
+    
+                                <div class="rb2_l vt_mid">최대 심박수</div>
+    
+                                <div class="rb2_r vt_mid">201 bpm</div>
+    
+                            </div>
+    
+                        </div>
+    
+                        <div class="rb3">
+    
+                            <div class="rb3_t">공유하기</div>
+    
+                            <div class="rb3_b">
+    
+                                <button type="button" class="share_btn sb1">
+    
+                                    <img src="img/s_kakao.png" alt="카카오톡 공유하기">
+    
+                                </button>
+    
+                                <button type="button" class="share_btn sb2">
+    
+                                    <img src="img/s_email.png" alt="이메일 공유하기">
+    
+                                </button>
+    
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+    
+    
+            </div>
+    
+        </div>
+    
+    
+    
+    </section>
+
+</div> <!--con_inner-->
+
+
+
+</body>
+
+</html>

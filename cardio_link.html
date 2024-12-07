@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - SHIN HYERIM</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+
+<header class="header">
+    <div class="b_head">
+        <button type="button" class="ham vt_mid" onclick="location.href='index.html'">
+            <img src="img/ham.png" alt="메뉴">
+        </button>
+        <h1 class="h1 vt_mid">
+            <a href="index.html">
+                <img src="img/logo.png" alt="CARDIO LINK">
+            </a>
+        </h1>
+    </div>   
+</header>
+
+<div class="con_inner">
+
+    <div class="side_bar">
+        <div class="my_area">
+            <h2 class="my_h2">에스엠메이커스</h2>
+            <div class="my_div">smmakers@smmakers.com</div>
+            <button type="button" class="logout" onclick="location.href='login.html'">로그아웃</button>
+        </div>
+        <nav class="nav">
+            <a href="index.html" class="nav_a">
+                <img src="img/nav_1.png" alt="홈">
+                <span class="nav_sp">홈</span>
+            </a>
+            <a href="history.html" class="nav_a">
+                <img src="img/nav_2.png" alt="이력 관리">
+                <span class="nav_sp">이력 관리</span>
+            </a>
+
+            <a href="member.html" class="nav_a">
+                <img src="img/nav_3.png" alt="회원 관리">
+                <span class="nav_sp">회원 관리</span>
+            </a>
+            <a href="class.html" class="nav_a">
+                <img src="img/nav_4.png" alt="클래스 관리">
+                <span class="nav_sp">클래스 관리</span>
+            </a>
+            <a href="cardio_link.html" class="nav_a on">
+                <img src="img/nav_5_on.png" alt="카디오링크 관리">
+                <span class="nav_sp">카디오링크 관리</span>
+            </a>
+
+            <a href="set.html" class="nav_a set_a">
+                <img src="img/nav_6.png" alt="설정">
+                <span class="nav_sp">설정</span>
+            </a>
+        </nav>
+    </div>
+
+    <section id="cardio" class="section">
+
+        <div class="contents">
+    
+            <div class="white_bg">
+    
+                <div class="title_area">
+    
+                    <h3 class="c_h3">카디오링크 관리</h3>
+    
+                    <div class="sub">카디오링크를 쉽고 간편하게 관리하실 수 있습니다</div>
+    
+                </div>
+    
+                <div class="m_con">
+    
+                    <div class="m_left vt_top">
+    
+                        <div class="s_area">
+    
+                            <div class="s_wrap vt_mid">
+    
+                                <input type="text" name="search" id="search" class="input" placeholder="명칭 검색 ">
+    
+                                <button type="button" class="s_btn">
+    
+                                    <img src="img/s_btn.png" alt="검색">
+    
+                                </button>
+    
+                            </div>
+    
+                            <button type="button" class="add_btn vt_mid">
+    
+                                <img src="img/add_btn.png" alt="카디오링크 추가" class="false on">
+    
+                                <img src="img/add_btn_on.png" alt="카디오링크 추가" class="true">
+    
+                            </button>
+    
+                        </div>
+    
+                        <div class="m_list">
+    
+                            <div class="wid525">
+    
+                                <div class="th_wrap">
+    
+                                    <div class="th th1 vt_mid">카디오링크 명칭</div>
+    
+                                    <div class="th th2 vt_mid">시리얼 넘버</div>
+    
+                                    <div class="th th3 vt_mid">소유 형태</div>
+    
+                                </div>
+    
+                                <div class="m_ul">
+    
+                                    <button class="m_li">
+    
+                                        <div class="td td1 vt_mid">카디오링크 1번</div>
+    
+                                        <div class="td td2 vt_mid">104354</div>
+    
+                                        <div class="td td3 vt_mid">개인</div>
+    
+                                    </button>
+    
+                                    <button class="m_li">
+    
+                                        <div class="td td1 vt_mid">카디오링크 2번</div>
+    
+                                        <div class="td td2 vt_mid">103892</div>
+    
+                                        <div class="td td3 vt_mid">개인</div>
+    
+                                    </button>
+    
+                                    <button class="m_li">
+    
+                                        <div class="td td1 vt_mid">카디오링크 3번</div>
+    
+                                        <div class="td td2 vt_mid">103904</div>
+    
+                                        <div class="td td3 vt_mid">클럽</div>
+    
+                                    </button>
+    
+                                    <button class="m_li">
+    
+                                        <div class="td td1 vt_mid">카디오링크 4번</div>
+    
+                                        <div class="td td2 vt_mid">104353</div>
+    
+                                        <div class="td td3 vt_mid">클럽</div>
+    
+                                    </button>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+                    <div class="m_right vt_top">
+    
+                        <div class="border">
+    
+                        <!--
+    
+                            tab1 = 선택하기 전
+    
+                            tab2 = 카디오링크 정보
+    
+                            tab3 = 카디오링크 수정
+    
+                            tab4 = 새 카디오링크 등록
+    
+                        -->
+    
+                            <div class="tab tab1 on">그룹핏을 선택해주세요</div>
+    
+                            <div class="tab tab2">
+    
+                                <h4 class="c_h4">카디오링크 1번</h4>
+    
+                                <div class="c_info">
+    
+                                    <div class="c_block">
+    
+                                        <div class="c_left vt_mid">카디오링크 명칭</div>
+    
+                                        <div class="c_right vt_mid">카디오링크 1번</div>
+    
+                                    </div>
+    
+                                    <div class="c_block">
+    
+                                        <div class="c_left vt_mid">시리얼 넘버</div>
+    
+                                        <div class="c_right vt_mid">104354</div>
+    
+                                    </div>
+    
+                                    <div class="c_block">
+    
+                                        <div class="c_left vt_mid">소유 형태</div>
+    
+                                        <div class="c_right vt_mid">개인 소유</div>
+    
+                                    </div>
+    
+                                    <div class="c_block">
+    
+                                        <div class="c_left vt_mid">인증일자</div>
+    
+                                        <div class="c_right vt_mid">2023-07-20</div>
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="btn_wrap">
+    
+                                    <button type="button" class="btns btn1">수정</button>
+    
+                                    <button type="button" class="btns btn2">삭제</button>
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="tab tab3">
+    
+                                <h4 class="c_h4">카디오링크 1번</h4>
+    
+                                <div class="c_info">
+    
+                                    <div class="c_block">
+    
+                                        <label for="name_edit" class="c_left vt_mid">카디오링크 명칭</label>
+    
+                                        <div class="c_right vt_mid">
+    
+                                            <input type="text" name="name_edit" id="name_edit" class="text" value="카디오링크 1번">
+    
+                                        </div>
+    
+                                    </div>
+    
+                                    <div class="c_block">
+    
+                                        <label for="num_edit" class="c_left vt_mid">시리얼 넘버</label>
+    
+                                        <div class="c_right vt_mid">
+    
+                                            <input type="number" name="num_edit" id="num_edit" class="text" value="104354">
+    
+                                        </div>
+    
+                                    </div>
+    
+                                    <div class="c_block">
+    
+                                        <div class="c_left vt_mid">소유 형태</div>
+    
+                                        <div class="c_right vt_mid">
+    
+                                            <div class="mr50">
+    
+                                                <input type="radio" name="owner" id="private" class="radio" checked>
+    
+                                                <label for="private" class="c_lab">개인 소유</label>
+    
+                                            </div>
+    
+                                            <div class="mr50">
+    
+                                                <input type="radio" name="owner" id="club" class="radio">
+    
+                                                <label for="club" class="c_lab">클럽 렌탈</label>
+    
+                                            </div>
+    
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="btn_wrap">
+    
+                                    <button type="button" class="btns btn1">저장</button>
+    
+                                    <button type="button" class="btns btn2">취소</button>
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class="tab tab4">
+    
+                                <h4 class="c_h4">새 카디오링크 추가</h4>
+    
+                                <div class="c_info">
+    
+                                    <div class="c_block">
+    
+                                        <label for="new_name" class="c_left vt_mid">카디오링크 명칭</label>
+    
+                                        <div class="c_right vt_mid">
+    
+                                            <input type="text" name="new_name" id="new_name" class="text" value="">
+    
+                                        </div>
+    
+                                    </div>
+    
+                                    <div class="c_block">
+    
+                                        <label for="new_number" class="c_left vt_mid">시리얼 넘버</label>
+    
+                                        <div class="c_right vt_mid">
+    
+                                            <input type="number" name="new_number" id="new_number" class="text" value="">
+    
+                                        </div>
+    
+                                    </div>
+    
+                                    <div class="c_block">
+    
+                                        <div class="c_left vt_mid">소유 형태</div>
+    
+                                        <div class="c_right vt_mid">
+    
+                                            <div class="mr50">
+    
+                                                <input type="radio" name="new_owner" id="new_private" class="radio" checked>
+    
+                                                <label for="new_private" class="c_lab">개인 소유</label>
+    
+                                            </div>
+    
+                                            <div class="mr50">
+    
+                                                <input type="radio" name="new_owner" id="new_club" class="radio">
+    
+                                                <label for="new_club" class="c_lab">클럽 렌탈</label>
+    
+                                            </div>
+    
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="btn_wrap">
+    
+                                    <button type="button" class="btns btn1">저장</button>
+    
+                                    <button type="button" class="btns btn2">취소</button>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+
+</div> <!--con_inner-->
+
+
+
+</body>
+
+</html>
